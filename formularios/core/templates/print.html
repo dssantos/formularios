@@ -1,0 +1,19 @@
+<table border="1" >
+    <tr>
+        <td>acao</td>
+        <td>objeto</td>
+        <td>quantidade</td>
+        <td>valor</td>
+        <!-- <td>indicacao</td> -->
+    </tr>
+        {% for acao in acoes %}
+    <tr>
+        <td>{{acao.acao}}</td>
+        <td>{{acao.objeto}}</td>
+        <td>{{acao.quantidade}}</td>
+        <td>{{acao.valor}}</td>
+        <!-- <td>{% for field in acao.indicacao %}{{ field }}{% endfor %}</td> -->
+    </tr>
+        {% endfor %}
+</table>
+{{acoes}}
